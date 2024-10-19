@@ -1,0 +1,14 @@
+<h3>Single line lists</h3>
+<div class="sidebar">
+  <mat-nav-list>
+    @for (link of list; track link) {
+    <a
+      class="sidebar-link"
+      [routerLink]="link.link"
+      [activated]="router.isActive(link.link, true)"
+      mat-list-item
+      >{{ link.name }}</a
+    >
+    }
+  </mat-nav-list>
+</div>
