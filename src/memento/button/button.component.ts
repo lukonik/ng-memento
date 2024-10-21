@@ -1,6 +1,8 @@
+import { NgClass } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
+  HostBinding,
   input,
   signal,
 } from '@angular/core';
@@ -17,7 +19,7 @@ type BUTTON_VARIANT_TYPES = 'flat' | 'stroked';
 @Component({
   selector: 'ui-button',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './button.component.html',
   styleUrl: './button.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
