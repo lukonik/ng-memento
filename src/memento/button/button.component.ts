@@ -19,7 +19,7 @@ type BUTTON_VARIANT_TYPES = 'flat' | 'stroked';
   standalone: true,
   imports: [],
   templateUrl: './button.component.html',
-  styleUrl: './button.component.css',
+  styleUrl: './button.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class UIButtonComponent {

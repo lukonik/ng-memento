@@ -1,0 +1,10 @@
+.container-page {
+  display: flex;
+}
+
+.content-area{
+  padding: 28px;
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+  width: 100%;
+}

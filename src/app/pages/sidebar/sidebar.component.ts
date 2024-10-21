@@ -12,7 +12,7 @@ export class SidebarComponent {
   list = [
     {
       name: 'Button',
-      link: '/components/button',
+      link: '/docs/button',
     },
     {
       name: 'Select',

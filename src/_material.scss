@@ -1,0 +1,94 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+@mixin color($theme) {
+  .primary-container {
+    background: mat.get-theme-color($theme, primary-container);
+  }
+  .surface {
+    background: mat.get-theme-color($theme, surface);
+  }
+
+  .surface-bright {
+    background: mat.get-theme-color($theme, surface-bright);
+  }
+  .surface-container-lowest {
+    background: mat.get-theme-color($theme, surface-container-lowest);
+  }
+  .surface-container-low {
+    background: mat.get-theme-color($theme, surface-container-low);
+  }
+  .surface-container {
+    background: mat.get-theme-color($theme, surface-container);
+  }
+  .surface-container-high {
+    background: mat.get-theme-color($theme, surface-container-high);
+  }
+  .surface-container-highest {
+    background: mat.get-theme-color($theme, surface-container-highest);
+  }
+
+  .on-primary-container {
+    color: mat.get-theme-color($theme, on-primary-container);
+  }
+
+  .outline-r {
+    border-right: 1px solid mat.get-theme-color($theme, outline);
+  }
+
+  .outline-variant-r {
+    border-right: 1px solid mat.get-theme-color($theme, outline-variant);
+  }
+}
+
+@mixin theme($theme) {
+  @if mat.theme-has($theme, color) {
+    @include color($theme);
+  }
+}
+
+// primary
+// on-primary
+// primary-container
+// on-primary-container
+// primary-fixed
+// primary-fixed-dim
+// on-primary-fixed
+// on-primary-fixed-variant
+// secondary
+// on-secondary
+// secondary-container
+// on-secondary-container
+// secondary-fixed
+// secondary-fixed-dim
+// on-secondary-fixed
+// on-secondary-fixed-variant
+// tertiary
+// on-tertiary
+// tertiary-container
+// on-tertiary-container
+// tertiary-fixed
+// tertiary-fixed-dim
+// on-tertiary-fixed
+// on-tertiary-fixed-variant
+// error
+// on-error
+// error-container
+// on-error-container
+// surface-dim
+// surface
+// surface-bright
+// surface-container-lowest
+// surface-container-low
+// surface-container
+// surface-container-high
+// surface-container-highest
+// on-surface
+// on-surface-variant
+// outline
+// outline-variant
+// inverse-surface
+// inverse-on-surface
+// inverse-primary
+// scrim
+// shadow

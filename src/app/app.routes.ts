@@ -2,19 +2,15 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'components',
-    loadComponent: () =>
-      import('./features/components-page/components-page.component').then(
-        (c) => c.ComponentsPageComponent
+    path: 'docs',
+    loadChildren: () =>
+      import('./pages/container-page/container-page.routes').then(
+        (d) => d.routes
       ),
-    children: [
-      {
-        path: 'button',
-        loadComponent: () =>
-          import(
-            './features/components-page/button-page/button-page.component'
-          ).then((b) => b.ButtonPageComponent),
-      },
-    ],
+  },
+  {
+    path: '',
+    redirectTo: 'docs',
+    pathMatch: 'full',
   },
 ];
