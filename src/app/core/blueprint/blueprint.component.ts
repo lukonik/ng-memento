@@ -12,11 +12,4 @@ import { DownloadService } from '../../services/download.service';
 export class BlueprintComponent {
   label = input.required<string>();
   description = input.required<string>();
-  downloadService = inject(DownloadService);
-
-  download() {
-    this.downloadService
-      .downloadComponent(this.label().toLowerCase())
-      .subscribe();
-  }
 }

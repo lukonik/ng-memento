@@ -5,6 +5,7 @@ import { UsageComponent } from '../../core/usage/usage.component';
 import { UsageItemComponent } from '../../core/usage/usage-item/usage-item.component';
 import { UIButtonComponent } from '../../../memento/button/button.component';
 import { ComponentSourceComponent } from '../../core/component-source/component-source.component';
+import { InstallationComponent } from '../../core/installation/installation.component';
 
 @Component({
   selector: 'app-button-page',
@@ -14,6 +15,7 @@ import { ComponentSourceComponent } from '../../core/component-source/component-
     BlueprintComponent,
     UsageComponent,
     UsageItemComponent,
+    InstallationComponent,
     UIButtonComponent,
   ],
   templateUrl: './button-page.component.html',
