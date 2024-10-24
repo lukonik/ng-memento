@@ -4,3 +4,9 @@
 @tailwind utilities;
 ;
 @import 'highlight.js/styles/github.css';
+
+
+html,body{
+  font-size: 14px;
+  @apply text-gray-800;
+}
