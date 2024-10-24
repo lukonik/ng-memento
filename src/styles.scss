@@ -1,34 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@use './material' as material;
-@use '@angular/material' as mat;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+;
 @import 'highlight.js/styles/github.css';
-
-@include mat.core();
-
-$my-theme: mat.define-theme(
-  (
-    color: (
-      theme-type: light,
-      primary: mat.$azure-palette
-    ),
-    typography: (
-      brand-family: 'Comic Sans',
-      bold-weight: 900,
-    ),
-  )
-);
-
-html {
-  @include mat.all-component-themes($my-theme);
-  @include material.theme($my-theme);
-  font-size: 12px;
-}
-
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
-}

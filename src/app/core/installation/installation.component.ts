@@ -1,11 +1,10 @@
 import { Component, inject, input } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
 import { DownloadService } from '../../services/download.service';
 
 @Component({
   selector: 'app-installation',
   standalone: true,
-  imports: [MatButtonModule],
+  imports: [],
   templateUrl: './installation.component.html',
   styleUrl: './installation.component.scss',
 })

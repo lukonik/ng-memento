@@ -1,22 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, input, OnInit, signal } from '@angular/core';
 import { zip } from 'rxjs';
-import { MatTabsModule } from '@angular/material/tabs';
 import { Highlight } from 'ngx-highlightjs';
 import JSZip from 'jszip';
 import saveAs from 'file-saver';
-import { MatButtonModule } from '@angular/material/button';
 import { CodeComponent } from '../code/code.component';
-import { MatIconModule } from '@angular/material/icon';
 @Component({
   selector: 'app-component-source',
   standalone: true,
   imports: [
-    MatTabsModule,
     Highlight,
-    MatButtonModule,
     CodeComponent,
-    MatIconModule,
   ],
   templateUrl: './component-source.component.html',
   styleUrl: './component-source.component.scss',
